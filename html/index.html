@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Script</title>
+  </head>
+  <body>
+    <h1>Learning about scripting</h1>
+
+    <button onclick="foodSelection()">select food</button>
+    <br />
+    <p>Count: <span id="count">0</span></p>
+  </body>
+
+  <script>
+    let counter = 0;
+    let food = ["burger", "pizza", "hotdog", "rice", "chicken"];
+    function increaseCounter() {
+      counter = counter + 1;
+      document.getElementById("count").innerText = counter;
+    }
+    function foodSelection() {
+      const max = food.length - 1;
+      console.log(food[max]);
+      document.getElementById("count").innerText = food[counter];
+      counter = counter + 1;
+
+      if (counter > max) {
+        counter = 0;
+      }
+    }
+  </script>
+
+  <style>
+    h1 {
+      color: rgb(197, 197, 197);
+    }
+
+    body {
+      text-align: center;
+      background-color: rgb(43, 94, 188);
+    }
+  </style>
+</html>

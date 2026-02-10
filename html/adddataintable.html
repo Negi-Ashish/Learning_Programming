@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <header>
+    <title>Adding data to table</title>
+  </header>
+  <body>
+    <h2>Add user data</h2>
+    <input placeholder="Input user" id="name" type="text" />
+    <input placeholder="Enter age" id="age" type="number" />
+    <button onclick="addData()">Add</button>
+    <br />
+    <table id="usertable">
+      <tr>
+        <th>User</th>
+        <th>Age</th>
+      </tr>
+    </table>
+  </body>
+  <script>
+    function addData() {
+      let name = document.getElementById("name").value;
+      let age = document.getElementById("age").value;
+      if (name === "" || age === "") {
+        alert("Please input age or name ");
+        return;
+      }
+      let table = document.getElementById("usertable");
+      let row = table.insertRow();
+      let nameCell = row.insertCell(0);
+      let ageCell = row.insertCell(1);
+      nameCell.innerText = name;
+      ageCell.innerText = age;
+      console.log(name, age);
+      document.getElementById("name").value = "";
+      document.getElementById("age").value = "";
+    }
+  </script>
+  <style>
+    table {
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 8px;
+      border: 1px, solid, black;
+    }
+  </style>
+</html>

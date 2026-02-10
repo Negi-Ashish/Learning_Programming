@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <header>
+    <title>Adding data to table</title>
+  </header>
+  <body>
+    <h2>Marks</h2>
+    <span
+      ><h4>English <input placeholder="Grades" id="a" type="number" /></h4>
+
+      <h4>Math <input placeholder="Grades" id="b" type="number" /></h4>
+      <h4>Physics <input placeholder="Grades" id="c" type="number" /></h4>
+      <h4>History <input placeholder="Grades" id="d" type="number" /></h4>
+      <h4>Chemistry <input placeholder="Grades" id="e" type="number" /></h4>
+      <h4>
+        Computer Science <input placeholder="Grades" id="f" type="number" />
+      </h4>
+    </span>
+
+    <button onclick="addData()">Add</button>
+    <br />
+    <h4 id="total">Total average percentage:</h4>
+  </body>
+  <script>
+    function addData() {
+      let a = document.getElementById("a").value;
+      let b = document.getElementById("b").value;
+      let c = document.getElementById("c").value;
+      let d = document.getElementById("d").value;
+      let e = document.getElementById("e").value;
+      let f = document.getElementById("f").value;
+      if (
+        a === "" ||
+        b === "" ||
+        c === "" ||
+        d === "" ||
+        e === "" ||
+        f === ""
+      ) {
+        alert("Write grades for every subject");
+        return;
+      }
+      let total =
+        Number(a) + Number(b) + Number(c) + Number(d) + Number(e) + Number(f);
+
+      document.getElementById("total").innerText = (total / 600) * 100;
+    }
+  </script>
+  <style>
+    table {
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 8px;
+      border: 1px, solid, black;
+    }
+  </style>
+</html>
