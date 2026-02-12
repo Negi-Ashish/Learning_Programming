@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+  <body>
+    <nav class="navbar">
+      <button data-target="content-1">Home</button>
+      <button data-target="content-2">About</button>
+      <button data-target="content-3">News</button>
+      <button data-target="content-4">Contact</button>
+    </nav>
+
+    <div id="home" class="content content-1 active">
+      <h1>I am content 1</h1>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+    </div>
+
+    <div id="news" class="content content-2">
+      <h1>I am content 2</h1>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+    </div>
+
+    <div id="contact" class="content content-3">
+      <h1>I am content 3</h1>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+    </div>
+
+    <div id="about" class="content content-4">
+      <h1>I am content 4</h1>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+    </div>
+
+    <div class="footer">
+      <p>© 2024 Bunnyfied Labs Private Limited.</p>
+    </div>
+  </body>
+</html>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav {
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    height: 46px;
+  }
+
+  nav button {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  nav button:hover {
+    background-color: #111111;
+  }
+
+  .footer {
+    display: flex;
+    background-color: #111111;
+    color: white;
+    justify-content: center;
+  }
+
+  .content {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content.active {
+    display: flex;
+  }
+
+  .content-1 {
+    background-color: aqua;
+  }
+
+  .content-2 {
+    background-color: blue;
+  }
+
+  .content-3 {
+    background-color: blueviolet;
+  }
+
+  .content-4 {
+    background-color: chartreuse;
+  }
+</style>
+
+<script>
+  const buttons = document.querySelectorAll(".navbar button");
+  const contents = document.querySelectorAll(".content");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+
+      const target = button.dataset.target;
+
+      contents.forEach((content) => {
+        content.classList.remove("active");
+      });
+
+      document.querySelector(`.${target}`).classList.add("active");
+    });
+  });
+</script>
