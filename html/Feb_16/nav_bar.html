@@ -16,9 +16,36 @@
         <button data-target="blog">Blog</button>
       </div>
     </nav>
-    <div class="home content active" id="home">
-      <h1>1</h1>
+    <div class="home content active hero-image" id="home">
+      <div class="hero-container">
+        <div style="display: flex; flex-direction: column">
+          <h3 style="color: yellow">Student</h3>
+          <h1 style="color: aqua; font-size: xxx-large">Hi I am</h1>
+          <p style="color: greenyellow; font-size: xxx-large">Ronav Mathur</p>
+          <p style="max-width: 470px; margin-top: 10px">
+            I am a Highschool student who really enjoys working with data and
+            technology I am learning about Javascript and creating websites and
+            learning html and css. I love creating websites and playing around
+            with html and css
+          </p>
+          <div style="display: flex; max-width: 470px">
+            <button class="hire-me-button">Download CV</button
+            ><button class="hire-me-button">Linkdin</button
+            ><button class="hire-me-button">Github</button
+            ><button class="hire-me-button">Medium</button>
+          </div>
+        </div>
+        <div>
+          <img
+            style="border-radius: 250px; border: solid; border-color: black"
+            src="anyonymous.jpg"
+            height="500px"
+            width="500px"
+          />
+        </div>
+      </div>
     </div>
+
     <div class="about content" id="about">
       <h1>about</h1>
       <h1>about</h1>
@@ -204,12 +231,11 @@
     .content {
       display: none;
 
-      text-align: center;
-
-      padding-top: 50px;
+      flex-direction: column;
+      align-items: center;
     }
     .content.active {
-      display: block;
+      display: flex;
     }
     footer {
       font-weight: bolder;
@@ -238,21 +264,44 @@
       border-color: transparent;
     }
 
-    .hero-text {
-      text-align: center;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-    }
     .hero-image {
-      position: relative;
       background-image: url("programmer.jpg");
       height: 100vh;
+
       background-repeat: no-repeat;
+
+      display: none;
+
       background-position: center;
+
       background-size: cover;
+
+      align-items: center;
+
+      justify-content: center;
+
+      flex-direction: column;
+    }
+
+    .hero-image .active {
+      display: flex;
+    }
+
+    .hero-container {
+      color: white;
+      align-items: center;
+
+      justify-content: center;
+
+      display: flex;
+      column-gap: 200px;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin: 0;
     }
   </style>
   <script>

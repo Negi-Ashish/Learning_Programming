@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="lesson1"><a href="test.pdf" download>Download resume</a></div>
+    <div class="lesson2"><button onclick="download()">Download Cv</button></div>
+    <div class="lesson3">
+      <a href="test.pdf" download><button>Downloading</button></a>
+    </div>
+  </body>
+  <style>
+    body {
+      flex-direction: column;
+      background-color: aqua;
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      align-items: center;
+    }
+    .lesson2,
+    .lesson1,
+    .lesson3 {
+      margin-top: 1rem;
+    }
+    button {
+      padding: 20px;
+      background-color: white;
+    }
+    button:hover {
+      background-color: black;
+      color: white;
+    }
+  </style>
+  <script>
+    function download() {
+      const link = document.createElement("a");
+      link.href = "test.pdf";
+      link.download = "test.pdf";
+      document.body.appendChild(link);
+      link.click();
+      link.click();
+
+      document.body.removeChild(link);
+    }
+  </script>
+</html>

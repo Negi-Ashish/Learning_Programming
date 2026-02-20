@@ -1,0 +1,502 @@
+<!doctype html>
+<!-- https://www.streamlinehq.com/ -->
+<html>
+  <body>
+    <nav class="navbar">
+      <button data-target="content-1">Home</button>
+      <button data-target="content-2">About</button>
+      <button data-target="content-3">News</button>
+      <button data-target="content-4">Contact</button>
+    </nav>
+
+    <div id="home" class="content content-1 active hero-image">
+      <div class="hero-container">
+        <div style="display: flex; flex-direction: column">
+          <h3 style="color: #facc15">Student</h3>
+          <h1 style="font-size: xxx-large; color: aqua">Hi! I am</h1>
+          <p style="font-size: xxx-large; color: greenyellow">John Doe</p>
+
+          <p style="max-width: 470px; margin-top: 10px">
+            Im a high school student who really enjoys working with data and
+            technology. Im learning about artificial intelligence and machine
+            learning, and I love finding patterns in information to solve
+            real-world problems.
+          </p>
+          <div style="display: flex; max-width: 470px; align-items: center">
+            <button class="download-btn" onclick="handleDownload()">
+              <span>Download CV</span>
+              <svg
+                class="icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1M12 4v12m0 0l-4-4m4 4l4-4"
+                />
+              </svg>
+            </button>
+            <div class="social-container">
+              <a
+                href="https://www.linkedin.com/in/ektanegi25/"
+                target="_blank"
+                class="social-icon"
+              >
+                <!-- LinkedIn SVG -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="icon"
+                >
+                  <path
+                    d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6 
+               1.11 6 0 4.88 0 3.5 
+               0 2.12 1.11 1 2.49 1 
+               3.87 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.07c.67-1.27 
+               2.3-2.6 4.73-2.6C22 7.6 24 9.6 24 13.3V24h-5v-9.3c0-2.2-.04-5-3.05-5
+               -3.05 0-3.52 2.38-3.52 4.84V24h-5V8z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="social-container">
+              <a
+                href="https://www.linkedin.com/in/ektanegi25/"
+                target="_blank"
+                class="social-icon"
+              >
+                <!-- Medium SVG -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  id="Medium-Logo-2--Streamline-Logos"
+                  height="24"
+                  width="24"
+                  class="icon"
+                >
+                  <desc>
+                    Medium Logo 2 Streamline Icon: https://streamlinehq.com
+                  </desc>
+                  <path
+                    fill-rule="evenodd"
+                    fill="currentColor"
+                    d="M1 1h22v22H1V1Zm14.522 5.5H19L17.5 8v8l1.5 1.5h-5.5L15 16V9.723l-2.343 4.62L11 17.5l-3.5 -6.417V15.5l2 2h-5l2 -2V9.25L5 6.5h3l4.059 6.812 3.416 -6.738 0.025 -0.074h0.013l0.002 -0.004 0.007 0.004Z"
+                    clip-rule="evenodd"
+                    stroke-width="1"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div class="social-container">
+              <a
+                href="https://www.linkedin.com/in/ektanegi25/"
+                target="_blank"
+                class="social-icon"
+              >
+                <!-- GitHub SVG -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  id="Github-Logo-2--Streamline-Logos"
+                  height="24"
+                  width="24"
+                  class="icon"
+                >
+                  <desc>
+                    Github Logo 2 Streamline Icon: https://streamlinehq.com
+                  </desc>
+                  <path
+                    fill="currentColor"
+                    d="M11.996 1.284a10.986 10.986 0 0 0 -3.472 21.412c0.548 0.095 0.722 -0.227 0.722 -0.517 0 -0.263 0.006 -0.991 0 -1.91 -3.057 0.662 -3.688 -1.448 -3.688 -1.448a2.907 2.907 0 0 0 -1.22 -1.607c-0.997 -0.682 0.075 -0.669 0.075 -0.669a2.307 2.307 0 0 1 1.683 1.131 2.34 2.34 0 0 0 3.197 0.914 2.34 2.34 0 0 1 0.697 -1.464c-2.439 -0.279 -5.004 -1.22 -5.004 -5.432a4.248 4.248 0 0 1 1.132 -2.948 3.942 3.942 0 0 1 0.107 -2.907s0.924 -0.295 3.02 1.128a10.402 10.402 0 0 1 5.503 0c2.102 -1.422 3.018 -1.128 3.018 -1.128 0.405 0.92 0.444 1.96 0.109 2.907a4.243 4.243 0 0 1 1.13 2.95c0 4.223 -2.569 5.15 -5.016 5.42a2.604 2.604 0 0 1 0.752 2.026v3.041c0 0.294 0.177 0.619 0.735 0.512a10.986 10.986 0 0 0 -3.48 -21.411Z"
+                    stroke-width="1"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            src="7729.png"
+            height="500px"
+            width="500px"
+            style="border-radius: 250px; border: solid"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="news" class="content content-2">
+      <div class="about"></div>
+
+      <div class="about-text">
+        <h1>Hi, I'm <span>John Doe</span></h1>
+        <h3>Creative Programmer & Problem Solver</h3>
+
+        <p class="tagline">
+          I build elegant digital experiences that combine clean code,
+          performance, and thoughtful design.
+        </p>
+
+        <div class="about-details">
+          <p>
+            With a strong foundation in modern web technologies, I focus on
+            building responsive and scalable applications.
+          </p>
+
+          <p>
+            I enjoy transforming complex problems into simple, intuitive
+            solutions that users genuinely enjoy.
+          </p>
+        </div>
+
+        <button class="cta-btn">Let’s Connect</button>
+      </div>
+    </div>
+
+    <div id="contact" class="content content-3">
+      <h1>I am content 3</h1>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+    </div>
+
+    <div id="about" class="content content-4">
+      <h1>I am content 4</h1>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+      <p>Some text some text some text some text.</p>
+    </div>
+
+    <div class="footer">
+      <p>© 2024 Bunnyfied Labs Private Limited.</p>
+    </div>
+  </body>
+</html>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav {
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    height: 46px;
+  }
+
+  nav button {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  nav button:hover {
+    background-color: #111111;
+  }
+
+  .footer {
+    display: flex;
+    background-color: #111111;
+    color: white;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .content {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content.active {
+    display: flex;
+  }
+
+  .content-1 {
+    background-color: aqua;
+  }
+
+  .content-3 {
+    background-color: blueviolet;
+  }
+
+  .content-4 {
+    background-color: chartreuse;
+  }
+
+  /* Start with Hero Elements */
+
+  .hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("programmer.jpg");
+
+    /* Set a specific height */
+    height: 100vh;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .hero-image.active {
+    display: flex;
+  }
+
+  .hero-container {
+    color: white;
+    gap: 0.5rem; /* clean consistent spacing */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 200px;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    margin: 0;
+  }
+
+  .hireme_button {
+    background-color: transparent;
+    padding: 25px;
+    color: white;
+    border-radius: 5px;
+    border-color: black;
+    cursor: pointer;
+    margin: 5px;
+    margin-top: 25px;
+  }
+
+  .hireme_button:hover {
+    background-color: #111111;
+    border-color: transparent;
+  }
+
+  .about {
+    /* The image used */
+    background-image: url("programmer.jpg");
+    background-color: red;
+
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+    /* Full height */
+    height: 100vh;
+    width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .about-text {
+    max-width: 700px;
+    text-align: center;
+    color: white;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+
+  .about-text h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-text h1 span {
+    color: #facc15;
+  }
+
+  .about-text h3 {
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    color: #ccc;
+  }
+
+  .tagline {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .about-details p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #ddd;
+  }
+
+  .cta-btn {
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background: transparent;
+    border: 2px solid #facc15;
+    color: #facc15;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .cta-btn:hover {
+    background: #facc15;
+    color: black;
+  }
+
+  .download-btn {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    /* To make in one line */
+    white-space: nowrap;
+    background: transparent;
+    border: 1px solid #fbbf24;
+    border-radius: 5px;
+    color: #fbbf24;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    padding: 0.7rem 1.5rem;
+  }
+
+  .download-btn:hover {
+    background: #fbbf24;
+    color: black;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .social-container {
+    display: flex;
+    gap: 15px;
+  }
+
+  .social-icon {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+
+    border: 1px solid #fbbf24;
+    border-radius: 50%;
+
+    color: #fbbf24;
+
+    transition: all 0.4s ease;
+  }
+
+  .social-icon:hover {
+    background: #fbbf24;
+    color: black;
+    transform: translateY(-3px);
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+<script>
+  const buttons = document.querySelectorAll(".navbar button");
+  const contents = document.querySelectorAll(".content");
+
+  console.log("contents", contents);
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+
+      const target = button.dataset.target;
+
+      contents.forEach((content) => {
+        content.classList.remove("active");
+      });
+
+      document.querySelector(`.${target}`).classList.add("active");
+    });
+  });
+
+  function handleDownload() {
+    const link = document.createElement("a");
+    link.href = "AshishResume_Jan_2026.pdf"; // Make sure file is in same folder or correct path
+    link.download = "AshishResume_Jan_2026.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+</script>
